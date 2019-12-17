@@ -1,0 +1,228 @@
+$fontSize1:30;
+$fontSize2:22;
+$fontSize3:40;
+$fontSize4:26;
+@import "vwstyle";
+
+*{                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+    margin: 0;
+    padding: 0;
+}
+html,body
+{
+    width: 100%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    overflow:hidden;
+    background: #fafafa;
+}
+header{
+    height: vw(320);
+    width: 100%;
+    // font-size: $fontSize;
+    align-self: flex-start;
+    background: #fff;
+    margin-bottom: vw(12);
+    section{
+        display: flex;
+        align-items: center;
+        height: vw(204);
+        position: relative;
+        figcaption{
+            display: flex;
+            align-items: center;
+            .i1{
+                display: inline-block;
+                width: vw(124);
+                height: vw(124);
+                border-radius: 50%;
+                margin:0 vw(30);
+                overflow: hidden;
+                background: #000;
+                // vertical-align: middle;
+                img{
+                    display: inline-block;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            article{
+                display: inline-block;
+                // vertical-align: middle;
+                // height: vw(90);
+                p{
+                    font-size: vw($fontSize1);
+                    color: black;
+                    font-weight: bolder;
+                    margin-bottom: vw(18);
+                }
+                span{
+                    color: #fff;
+                    font-size: vw($fontSize2);
+                    padding: 4px 14px;
+                    background: #e5645f;
+                    border-radius: 28px;
+                }   
+            }
+        }
+        .i2{
+            position: absolute;
+            right: vw(30);
+            font-size: 20px;
+        }
+    }
+    aside{
+        height: vw(116);
+        display: flex;
+        p{
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            font-size: vw($fontSize1);
+            span{
+                text-align: center;
+            }
+        }
+    }
+}
+nav{
+    height: vw(158);
+    display: flex;
+    background: #fff;
+    p{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: vw($fontSize4);
+        i,span{
+            text-align: center;
+        }
+        i{
+            font-size: vw(40) !important;
+        }
+        .i1{
+            color: #f3b46a;
+        }
+        .i2{
+            color: #63a3e9;
+        }
+        .i3{
+            color: #ea825d;
+        }
+        .i4{
+            color: #52a590;
+        }
+    }
+}
+main{
+    flex: 1;
+    overflow: auto;
+    // font-size: $fontSize;
+    figure{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #e8e8e8;
+    } 
+    figure:last-child{
+        border: none;
+    }
+    section{
+        margin-bottom: vw(12);
+    }
+    section:last-child{
+        margin-bottom: 0;
+    }
+    
+    section:nth-child(1){
+        height: vw(188);
+        display: flex;
+        flex-direction: column;
+        padding-left: vw(30);
+        background: #fff;
+        span{
+            font-size: vw($fontSize1);
+        }
+        i{
+            color: #999999;
+            margin-right: vw(40);
+        }
+        figure{
+            flex: 1;
+        }
+        figure:nth-child(1){
+            box-sizing: border-box;
+            span:nth-child(2){
+                color: #999999;
+            }
+        }
+    }
+    section:nth-child(2){
+        height: vw(376);
+        display: flex;
+        flex-direction: column;
+        padding-left: vw(30);
+        background: #fff;
+        span{
+            font-size: vw($fontSize1);
+        }
+        i{
+            color: #999999;
+            margin-right: vw(40);
+        }
+        figure{
+            flex: 1;
+        }
+        figure:nth-child(3) span:nth-child(2){
+            color: #999999;
+        }
+    }
+    section:nth-child(3){
+        height: vw(282);
+        display: flex;
+        flex-direction: column;
+        padding-left: vw(30);
+        background: #fff;
+        span{
+            font-size: vw($fontSize1);
+        }
+        i{
+            color: #999999;
+            margin-right: vw(40);
+        }
+        figure{
+            flex: 1;
+        }
+    }
+}
+footer{
+    border-top: 1px solid #b2b2b2;
+    height: vw(88);
+    display: flex;
+    p{
+        flex: 1;
+        display: flex;
+        justify-content: center;
+    }
+    a{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: black;
+        text-decoration: none;
+    }
+    a span{
+        font-size: vw($fontSize2);
+        
+    }
+    i{
+        font-size: vw($fontSize3) !important;
+    }
+    p:last-child a{
+        color:#e5645f !important;
+    }
+}
